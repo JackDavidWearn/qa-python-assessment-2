@@ -114,7 +114,12 @@ def three(a):
 
 
 def four(string1, string2):
-    return ""
+    splitString1 = list(string1)
+    splitString2 = list(string2)
+    result = ('')
+    for i in range(0, len(splitString1)):
+        result += splitString1[i] + splitString2[i]
+    return result
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
