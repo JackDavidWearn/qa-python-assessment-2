@@ -78,7 +78,11 @@ def two(number):
 
 
 def three(a):
-    return 1
+    string = str(a)
+    two = string*2
+    three = string*3
+    four = string*4
+    return a + int(two) + int(three) + int(four)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
