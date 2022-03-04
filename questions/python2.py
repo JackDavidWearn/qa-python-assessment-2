@@ -168,6 +168,11 @@ def five():
 
 
 def six(string):
+    ignoreCase = string.lower()
+    splitString = list(ignoreCase)
+    if splitString[-1] == 'y':
+        if splitString[-2] == 'p':
+            return True
     return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
