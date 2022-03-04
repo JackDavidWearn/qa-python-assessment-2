@@ -257,12 +257,12 @@ def nine(string1, string2):
     for i in string1Lower:
         # print(i)
         if i not in string2Lower:
-            checkForWord.append(False)
+            checkForWord.append(0)
             # print(checkForWord)
         else:
-            checkForWord.append(True)
+            checkForWord.append(1)
             # print(checkForWord)
-    if False in checkForWord:
+    if 0 in checkForWord:
         return False
     else:
         return True
