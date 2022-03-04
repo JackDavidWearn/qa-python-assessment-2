@@ -32,8 +32,8 @@
 
 def one(string):
     finalResult = ''
-    for char in string:
-        finalResult += char * 3
+    for i in string:
+        finalResult += i * 3
     return finalResult
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -140,8 +140,8 @@ def four(string1, string2):
 import random
 def five():
     result = []
-    i = 0
-    while i < 5:
+    i = 1
+    while i <= 5:
         randomNumber = random.randint(100, 200)
         if randomNumber % 2 == 0:
             result.append(randomNumber)
@@ -202,7 +202,7 @@ def six(string):
 def seven(a, b, c):
     list1 = [a,b,c]
     list1.sort()
-    if list1[1] - list1[0] == list1[-1] - list1[-2]:
+    if list1[-1] - list1[-2] == list1[1] - list1[0]:
         return True
     return False
 
@@ -225,7 +225,10 @@ def seven(a, b, c):
 
 
 def eight(string,  a):
-    return ""
+    for i in range(0, a):
+        string = string[:len(string)//2] + string[1 + len(string)//2:]
+    return string
+
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
