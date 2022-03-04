@@ -137,9 +137,16 @@ def four(string1, string2):
     # There is a module which can be used to generate random numbers, this module is called random.
     # The random module contains a function called randint.
 
-
+import random
 def five():
-    return []
+    result = []
+    i = 0
+    while i < 5:
+        randomNumber = random.randint(100, 200)
+        if randomNumber % 2 == 0:
+            result.append(randomNumber)
+            i += 1
+    return result
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
