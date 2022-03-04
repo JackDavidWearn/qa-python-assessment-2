@@ -287,6 +287,19 @@ def nine(string1, string2):
 
 
 def ten(x, y):
-    return []
+    if x < 0 or y < 0:
+        return False
+    
+    twoDArray = []
+    for i in range(0, x):
+        column = i
+        # twoDArray.append(i)
+        for j in range(0, y):
+            row = i * j
+            # twoDArray.append(i*j)
+        twoDArray.insert(column, row)
+    return twoDArray
+
+print(ten(3, 2))
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
