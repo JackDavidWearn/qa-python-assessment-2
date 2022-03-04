@@ -31,8 +31,8 @@
 # How does a for loop iterate through a string?
 
 def one(string):
-    finalResult = ''
-    for i in string:
+    finalResult = '' 
+    for i in string: 
         finalResult += i * 3
     return finalResult
 
@@ -248,7 +248,25 @@ def eight(string,  a):
 
 
 def nine(string1, string2):
-    return False
+    if len(string1) > len(string2):
+        return nine(string2, string1)
+
+    checkForWord = []
+    string1Lower = string1.lower()
+    string2Lower = string2.lower()
+    for i in string1Lower:
+        # print(i)
+        if i not in string2Lower:
+            checkForWord.append(False)
+            # print(checkForWord)
+        else:
+            checkForWord.append(True)
+            # print(checkForWord)
+    if False in checkForWord:
+        return False
+    else:
+        return True
+
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
